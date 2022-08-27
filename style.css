@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+body  {font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif}
+
+/* BOXA */
+.boxA  {background-color: #696969}
+.boxA:after  {content: "";
+              display: block;
+              clear: both}
+
+.box1  {float: left;
+        width: auto}
+
+.box2  {float: right;
+        width: auto}
+
+/* サイト名　*/
+.site h1 a  {color: #000000;
+             text-decoration: none}
+
+.site h1  {margin: 0;
+           font-size: 25px}
+
+.site p  {margin: 0;
+          font-size: 20px}
+
+/* SNS-MENU */
+.sns-menu ul  {margin: 0;
+               padding: 0;
+               list-style: none}
+
+.sns-menu li a  {display: block;
+                 padding: 5px;
+                 color: #000000;
+                 font-size: 20px;
+                 text-decoration: none}
+
+.sns-menu li a:hover  {background-color: #dcdcdc}
+
+.sns-menu ul:after  {content: "";
+                     display: block;
+                     clear: both}
+
+.sns-menu li  {float: left;
+               width: auto}
+
+/* box3 */
+/* ヘッダー画像 */
+.topimg  {max-width: 100%;
+          height: auto;
+          vertical-align: bottom}
+
+/* box4 */
+.box4  {background-color: #ffffff}
+
+/* MAIN-MENU */
+.main-nav ul  {margin: 0;
+               padding: 0;
+               list-style: none}
+
+.main-nav li a  {display: block;
+                 padding: 5px;
+                 color: #000000;
+                 font-size: 14px;
+                 text-decoration: none}
+
+.main-nav li a:hover  {background-color: #dcdcdc}
+
+.main-nav ul:after  {content: "";
+                     display: block;
+                     clear: both}
+
+.main-nav li  {float: left;
+               width: auto}
+
+/* box5 */
+
+/* ABOUT */
+/* ボックスの色と高さ */
+/* boxB */
+.boxB  {background-color: #c0c0c0}
+/* box6 */
+.boxB .box6  {background-color: #c0c0c0;
+              line-height: 200px}
+/* box1A */
+.boxB .box1A  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxB  {position: relative}
+.box1A  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* NEWS */
+/* ボックスの色と高さ */
+/* boxC */
+.boxC  {background-color: #dcdcdc}
+/* box7 */
+.boxC .box7  {background-color: #dcdcdc;
+              line-height: 200px}
+/* box1B */
+.boxC .box1B  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxC  {position: relative}
+.box1B  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* EVENT */
+/* ボックスの色と高さ */
+/* box */
+.boxD  {background-color: #c0c0c0}
+/* box6 */
+.boxD .box8  {background-color: #c0c0c0;
+              line-height: 200px}
+/* box1A */
+.boxD .box1C  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxD  {position: relative}
+.box1C  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* GUEST */
+/* ボックスの色と高さ */
+/* boxC */
+.boxE  {background-color: #dcdcdc}
+/* box7 */
+.boxE .box9  {background-color: #dcdcdc;
+              line-height: 200px}
+/* box1B */
+.boxE .box1D  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxE  {position: relative}
+.box1D  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* ACCESS */
+/* ボックスの色と高さ */
+/* boxB */
+.boxF  {background-color: #c0c0c0}
+/* box6 */
+.boxF .box10  {background-color: #c0c0c0;
+              line-height: 200px}
+/* box1A */
+.boxF .box1E  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxF  {position: relative}
+.box1E  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* PAST */
+/* ボックスの色と高さ */
+/* boxC */
+.boxG  {background-color: #dcdcdc}
+/* box7 */
+.boxG .box11  {background-color: #dcdcdc;
+              line-height: 200px}
+/* box1B */
+.boxG .box1F  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxG  {position: relative}
+.box1F  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* SNS */
+/* ボックスの色と高さ */
+/* box */
+.boxH  {background-color: #c0c0c0}
+/* box6 */
+.boxH .box12  {background-color: #c0c0c0;
+              line-height: 200px}
+/* box1A */
+.boxH .box1G  {background-color: #ffffff;
+               line-height: 100px}
+/* ボックスを重ねる設定 */
+.boxH  {position: relative}
+.box1G  {position: absolute;
+         top: 50px;
+         left: 200px}
+
+.about h1  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px}
+
+.about h2  {margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px}
+
+.about p  {margin-top: 0;
+           margin-bottom: 20px}
+
+/* BOXB */
+.boxB  {background-color: #696969}
+.boxB:after  {content: "";
+              display: block;
+              clear: both}
+
+.box13  {float: left;
+         width: 33.3333%}
+
+.box14  {float: left;
+         width: 33.3333%}
+
+.box15  {float: left;
+         width: 33.3333%}
