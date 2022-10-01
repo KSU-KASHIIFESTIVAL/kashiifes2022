@@ -1,280 +1,348 @@
 @charset "UTF-8";
 
-body  {font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif}
+/* 共通部分 */
+html {font-size: 100%;}
+body {font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+      line-height: 1.7;
+      color: #432;}
 
-/* BOXA */
-.boxA  {background-color: #696969}
-.boxA:after  {content: "";
-              display: block;
-              clear: both}
 
-.box1  {float: left;
-        width: auto}
+/* RESET CSS */
+* {
+  margin:0;
+  padding: 0;
+  line-height: 100%;
+  list-style-type: none;
+}
 
-.box2  {float: right;
-        width: auto}
+a {
+  text-decoration: none;
+}
 
-/* サイト名　*/
-.site h1 a  {color: #000000;
-             text-decoration: none}
 
-.site h1  {margin: 0;
-           font-size: 25px}
+/****************  HEADER **************/
+header {
+  position: relative;
+}
 
-.site p  {margin: 0;
-          font-size: 20px}
+#Logo {
+  position: absolute;
+  left: 4rem;
+  top: 1.5rem;
+  display: block;
+  width: 3rem;
+}
 
-/* SNS-MENU */
-.sns-menu ul  {margin: 0;
-               padding: 0;
-               list-style: none}
+#HeaderTitle {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+  margin: 0;
+  line-height: 100%;
+  font-size: 2rem;
+}
 
-.sns-menu li a  {display: block;
-                 padding: 5px;
-                 color: #000000;
-                 font-size: 20px;
-                 text-decoration: none}
+#MainVisual  {
+  padding-top: 6rem;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom
+}
+#MainVisual img {
+  display: block;
+  width: 100%;
+}
 
-.sns-menu li a:hover  {background-color: #dcdcdc}
+#TopNavi {
+  position: absolute;
+  right: 3rem;
+  top: 1.5rem;
+}
+#TopNavi ul {
+  display: flex;
+}
+#TopNavi ul li {
+  margin-left: 1rem;
+}
+#TopNavi ul a {
+  font-size: 1rem;
+  color: #432;
+}
+#TopNavi ul a:hover {color: #0bd;}
 
-.sns-menu ul:after  {content: "";
-                     display: block;
-                     clear: both}
+@media only screen and (max-width: 768px) {
 
-.sns-menu li  {float: left;
-               width: auto}
+  #Logo {
+    top: 1.25rem;
+    width: 2.5rem;
+  }
 
-/* box3 */
-/* ヘッダー画像 */
-.topimg  {max-width: 100%;
-          height: auto;
-          vertical-align: bottom}
+  #HeaderTitle {
+    left: 7.5rem;
+    top: 1.75rem;
+    font-size: 1.5rem;
+  }
 
-/* box4 */
-.box4  {background-color: #ffffff}
+  #MainVisual  {
+    padding-top: 5rem;
+  }
 
-/* MAIN-MENU */
-.main-nav ul  {margin: 0;
-               padding: 0;
-               list-style: none}
+}
 
-.main-nav li a  {display: block;
-                 padding: 5px;
-                 color: #000000;
-                 font-size: 14px;
-                 text-decoration: none}
+@media only screen and (max-width: 414px) {
 
-.main-nav li a:hover  {background-color: #dcdcdc}
+  #Logo {
+    left: 2rem;
+    top: 1rem;
+    width: 2rem;
+  }
 
-.main-nav ul:after  {content: "";
-                     display: block;
-                     clear: both}
+  #HeaderTitle {
+    left: 5rem;
+    top: 1.5rem;
+    font-size: 1rem;
+  }
 
-.main-nav li  {float: left;
-               width: auto}
+  #MainVisual  {
+    padding-top: 4rem;
+  }
 
-/* box5 */
+}
 
-/* ABOUT */
-/* ボックスの色と高さ */
-/* boxB */
-.boxB  {background-color: #c0c0c0}
-/* box6 */
-.boxB .box6  {background-color: #c0c0c0;
-              line-height: 200px}
-/* box1A */
-.boxB .box1A  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxB  {position: relative}
-.box1A  {position: absolute;
-         top: 50px;
-         left: 200px}
+/*************** Main Navigation ****************/
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+#MainNavi {
+  position: sticky;
+  top: 0;
+  padding: 1rem 3rem;
+  background-color: #f5f5f5;
+  z-index:99999;
+}
+  #MainNavi  ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  #MainNavi  li {
+    width: 12.5%;
+    border-bottom: none;
+    text-align: center;
+  }
+  #MainNavi  a {
+    font-size: 1.25rem;
+    color: #432;
+  }
+  #MainNavi  a:hover {
+    color: #0bd;
+  }
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+@media only screen and (max-width: 768px) {
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
+  #MainNavi {
+    padding: 0.5rem 3rem;
+  }
+  #MainNavi  li {
+    width: 25%;
+    padding: 0.5rem 0;
+  }
 
-/* NEWS */
-/* ボックスの色と高さ */
-/* boxC */
-.boxC  {background-color: #dcdcdc}
-/* box7 */
-.boxC .box7  {background-color: #dcdcdc;
-              line-height: 200px}
-/* box1B */
-.boxC .box1B  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxC  {position: relative}
-.box1B  {position: absolute;
-         top: 50px;
-         left: 200px}
+}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+@media only screen and (max-width: 414px) {
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+  #MainNavi {
+    padding: 0.5rem 1rem;
+  }
+  #MainNavi  li {
+    width: 25%;
+    padding: 0.5rem 0;
+  }
+  #MainNavi  a {
+    font-size: 1rem;
+  }
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
+}
 
-/* EVENT */
-/* ボックスの色と高さ */
-/* box */
-.boxD  {background-color: #c0c0c0}
-/* box6 */
-.boxD .box8  {background-color: #c0c0c0;
-              line-height: 200px}
-/* box1A */
-.boxD .box1C  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxD  {position: relative}
-.box1C  {position: absolute;
-         top: 50px;
-         left: 200px}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+/***************** SLIDER ****************/
+#slideContainer {
+  width: 100%;
+}
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+.bx-wrapper {
+  margin-bottom: 0 !important;
+}
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
 
-/* GUEST */
-/* ボックスの色と高さ */
-/* boxC */
-.boxE  {background-color: #dcdcdc}
-/* box7 */
-.boxE .box9  {background-color: #dcdcdc;
-              line-height: 200px}
-/* box1B */
-.boxE .box1D  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxE  {position: relative}
-.box1D  {position: absolute;
-         top: 50px;
-         left: 200px}
+/************** MAIN CONTENTS *************/
+.box{
+  display: flex;
+  flex-direction: row;
+  background-color: #b0c4de;
+  padding: 3rem;
+}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+.box h1{
+  width : 15%;
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: #222;
+}
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+.content {
+  width : calc(85% - 2rem);
+  background-color: white;
+  padding: 1rem;
+}
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
+.content h2{
+  margin-bottom: 1.5rem;
+  color: #333;
+}
 
-/* ACCESS */
-/* ボックスの色と高さ */
-/* boxB */
-.boxF  {background-color: #c0c0c0}
-/* box6 */
-.boxF .box10  {background-color: #c0c0c0;
-              line-height: 200px}
-/* box1A */
-.boxF .box1E  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxF  {position: relative}
-.box1E  {position: absolute;
-         top: 50px;
-         left: 200px}
+.content article {
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+.content article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+.content h3{
+  margin-bottom: 1rem;
+  color: #444;
+  background: #EEE;
+  padding: 0.5rem;
+  border-left: solid 6px #191970;
+}
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
+.content h4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
-/* PAST */
-/* ボックスの色と高さ */
-/* boxC */
-.boxG  {background-color: #dcdcdc}
-/* box7 */
-.boxG .box11  {background-color: #dcdcdc;
-              line-height: 200px}
-/* box1B */
-.boxG .box1F  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxG  {position: relative}
-.box1F  {position: absolute;
-         top: 50px;
-         left: 200px}
+}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+.content h5{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+}
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
+.content p{
+  line-height: 180%;
+  color: #555;
+}
 
-/* SNS */
-/* ボックスの色と高さ */
-/* box */
-.boxH  {background-color: #c0c0c0}
-/* box6 */
-.boxH .box12  {background-color: #c0c0c0;
-              line-height: 200px}
-/* box1A */
-.boxH .box1G  {background-color: #ffffff;
-               line-height: 100px}
-/* ボックスを重ねる設定 */
-.boxH  {position: relative}
-.box1G  {position: absolute;
-         top: 50px;
-         left: 200px}
+/*** ID:News ****/
+#News ul {
+  margin-left: 2rem;
+}
 
-.about h1  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 40px}
+#News li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
 
-.about h2  {margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 36px}
+/*** ID:Access ****/
+#Access iframe {
+  width:100%;
+  height: 500px;
+}
 
-.about p  {margin-top: 0;
-           margin-bottom: 20px}
 
-/* BOXB */
-.boxB  {background-color: #696969}
-.boxB:after  {content: "";
-              display: block;
-              clear: both}
+/*** YouTube フレキシブル表示対応 ***/
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9の場合*/
+    height: 0;
+    overflow: hidden;
+}
 
-.box13  {float: left;
-         width: 33.3333%}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
 
-.box14  {float: left;
-         width: 33.3333%}
 
-.box15  {float: left;
-         width: 33.3333%}
+@media only screen and (max-width: 768px) {
+  .box{
+    flex-direction:column;
+    padding: 2.5rem;
+  }
+
+  .box h1{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    width: calc(100% - 2rem);
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .content article {
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .content article img {
+    width: 100%;
+  }
+
+  .youtube iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  .box{
+    flex-direction:column;
+    padding: 1rem;
+  }
+
+  .box h1{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    width: calc(100% - 2rem);
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .content article {
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .content p{
+    font-size: 0.9rem;
+    }
+
+}
+
+/************** FOOTER ***************/
+footer {
+  padding: 2rem;
+  background: #333;
+  text-align: center;
+  color: white;
+}
