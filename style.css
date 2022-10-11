@@ -236,6 +236,18 @@ header {
   color: #555;
 }
 
+/***ボタン
+.btn {
+  width: 10rem;
+  height: 1rem;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #6495ed;
+  display: block;
+  text-decoration: none;
+  color: #444;
+}
+
 /*** ID:News ****/
 #News ul {
   margin-left: 2rem;
