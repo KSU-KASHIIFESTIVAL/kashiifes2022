@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {font-size: 100%;}
+body {font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+      line-height: 1.7;
+      background-color: #b0c4de;
+      color: #432;}
+
+
+/* RESET CSS */
+* {
+  margin:0;
+  padding: 0;
+  line-height: 100%;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/****************  HEADER **************/
+header {
+  position: relative;
+  background-color: white;
+}
+
+#Logo {
+  position: absolute;
+  left: 4rem;
+  top: 1.5rem;
+  display: block;
+  width: 3rem;
+}
+
+#HeaderTitle {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+  margin: 0;
+  line-height: 100%;
+  font-size: 2rem;
+}
+
+#MainVisual  {
+  padding-top: 6rem;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom
+}
+#MainVisual img {
+  display: block;
+  width: 100%;
+}
+
+#TopNavi {
+  position: absolute;
+  right: 3rem;
+  top: 1.5rem;
+}
+#TopNavi ul {
+  display: flex;
+}
+#TopNavi ul li {
+  margin-left: 1rem;
+}
+#TopNavi ul a {
+  font-size: 1rem;
+  color: #432;
+}
+#TopNavi ul a:hover {color: #0bd;}
+
+@media only screen and (max-width: 768px) {
+
+  #Logo {
+    top: 1.25rem;
+    width: 2.5rem;
+  }
+
+  #HeaderTitle {
+    left: 7.5rem;
+    top: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  #MainVisual  {
+    padding-top: 5rem;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+  #Logo {
+    left: 2rem;
+    top: 1rem;
+    width: 2rem;
+  }
+
+  #HeaderTitle {
+    left: 5rem;
+    top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  #MainVisual  {
+    padding-top: 4rem;
+  }
+
+}
+
+/*************** Main Navigation ****************/
+
+#MainNavi {
+  position: sticky;
+  top: 0;
+  padding: 1rem 3rem;
+  background-color: #f5f5f5;
+  z-index:99999;
+}
+  #MainNavi  ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  #MainNavi  li {
+    width: 12.5%;
+    border-bottom: none;
+    text-align: center;
+  }
+  #MainNavi  a {
+    font-size: 1.25rem;
+    color: #432;
+  }
+  #MainNavi  a:hover {
+    color: #0bd;
+  }
+
+@media only screen and (max-width: 768px) {
+
+  #MainNavi {
+    padding: 0.5rem 3rem;
+  }
+  #MainNavi  li {
+    width: 25%;
+    padding: 0.5rem 0;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+  #MainNavi {
+    padding: 0.5rem 1rem;
+  }
+  #MainNavi  li {
+    width: 25%;
+    padding: 0.5rem 0;
+  }
+  #MainNavi  a {
+    font-size: 1rem;
+  }
+
+}
+
+
+/***************** SLIDER ****************/
+#slideContainer {
+  width: 100%;
+}
+
+.bx-wrapper {
+  margin-bottom: 0 !important;
+}
+
+
+/************** MAIN CONTENTS *************/
+.box{
+  display: flex;
+  flex-direction: row;
+  width: calc(85% - 2rem);
+  background-color: #b0c4de;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.box .sub_title{
+  width : 15%;
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.content {
+  width : calc(85% - 2rem);
+  background-color: white;
+  padding: 1rem;
+}
+
+.content h2{
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.content article {
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+}
+
+.content article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.content h3{
+  margin-bottom: 1rem;
+  color: #444;
+  background: #EEE;
+  padding: 0.5rem;
+  border-left: solid 6px #191970;
+}
+
+.content h4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.content h5{
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p{
+  line-height: 180%;
+  color: #555;
+}
+
+.btn {
+  width: 100%;
+  max-width: 20rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #6495ed;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+  transition: all 0.4s ease-out;
+}
+.btn:hover {
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+/*** ID:News ****/
+#News ul {
+  margin-left: 2rem;
+}
+
+#News li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
+/*** ID:Access ****/
+#Access iframe {
+  width:100%;
+  height: 500px;
+}
+
+
+/*** YouTube フレキシブル表示対応 ***/
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9の場合*/
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .box{
+    flex-direction:column;
+    padding: 2.5rem;
+  }
+
+  .box .sub_title{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    width: calc(100% - 2rem);
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .content article {
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .content article img {
+    width: 100%;
+  }
+
+  .youtube iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  .box{
+    flex-direction:column;
+    padding: 1rem;
+  }
+
+  .box .sub_title{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    width: calc(100% - 2rem);
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .content article {
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .content p{
+    font-size: 0.9rem;
+    }
+
+}
+
+/************** FOOTER ***************/
+footer {
+  padding: 2rem;
+  background: #333;
+  text-align: center;
+  color: white;
+}
